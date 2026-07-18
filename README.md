@@ -6,7 +6,7 @@
 [![Build: Gradle KTS](https://img.shields.io/badge/Build-Gradle_KTS-02303A?logo=gradle)](https://gradle.org)
 [![PRs: Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)](CONTRIBUTING.md)
 
-Native Android client for Cuban **casa particular** hosts to report their guests to the authorities. 🇨🇺
+Native Android client for Cuban lodging hosts to submit guest reports to the official portal. 🇨🇺
 
 > ⚠️ **Unofficial project.** Not affiliated with CIDP-MININT or any government entity. Talks to the official portal using the host's own credentials, the same way a browser does.
 >
