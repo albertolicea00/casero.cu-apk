@@ -1,72 +1,69 @@
-# CASERO — Android
+# 🏠 CASERO.cu — Android
 
-Native Android client for Cuban private lodging hosts (*arrendadores*) to
-report their guests to the immigration authority.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Platform: Android](https://img.shields.io/badge/Platform-Android-3DDC84?logo=android)](https://developer.android.com)
+[![Language: Kotlin](https://img.shields.io/badge/Language-Kotlin-7F52FF?logo=kotlin)](https://kotlinlang.org)
+[![Build: Gradle KTS](https://img.shields.io/badge/Build-Gradle_KTS-02303A?logo=gradle)](https://gradle.org)
+[![PRs: Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)](CONTRIBUTING.md)
 
-Hosts are legally required to register every guest with immigration. Today that
-means either dialing phone (USSD) codes and confirming by SMS, or using the
-official web portal at `https://casero.rem.cu/` — a site that is only reachable
-from inside Cuba and serves an untrusted TLS certificate. This app wraps both
-channels behind a native, offline-friendly interface.
+Native Android client for Cuban **casa particular** hosts to report their guests to the authorities. 🇨🇺
 
-> **Unofficial project.** This is an independent client. It is not affiliated
-> with, endorsed by, or maintained by CIDP-MININT or any government entity. It
-> talks to the official portal using the host's own credentials, the same way a
-> browser does.
+> ⚠️ **Unofficial project.** Not affiliated with CIDP-MININT or any government entity. Talks to the official portal using the host's own credentials, the same way a browser does.
 
-## Features
+---
 
-- **Guest registration** through the two supported channels:
-  - **USSD / SMS codes** — works without a data connection.
-  - **Web portal API** — the app authenticates against `casero.rem.cu` and
-    performs the same requests the browser makes.
-- List active and registered guests, with companions.
-- Manage communication channels (phones and emails) used by the portal.
+## ✨ Features
 
-## Tech stack
+- 📋 **Guest registration** via two channels:
+  - 📞 **USSD / SMS codes** — works without a data connection
+  - 🌐 **Web portal API** — authenticates against `casero.rem.cu` and mirrors browser requests
+- 👥 List active & registered guests with companions
+- 📱 Manage communication channels (phones & emails)
 
-- **Language:** Kotlin
-- **Build system:** Gradle (Kotlin DSL)
-- **Min SDK / Target SDK:** to be pinned in `app/build.gradle.kts`
-- **Networking:** the portal is ASP.NET MVC; the client must carry the
-  anti-forgery token and session cookies (see [CLAUDE.md](CLAUDE.md)).
+## 🛠 Tech Stack
 
-## Getting started
+| Layer | Choice |
+|-------|--------|
+| Language | Kotlin |
+| Build | Gradle (Kotlin DSL) |
+| Networking | ASP.NET MVC portal (anti-forgery token + session cookies) |
+
+## 🚀 Getting Started
 
 ```bash
-git clone <this-repo-url>
-cd casero-cu-apk
+git clone https://github.com/albertolicea00/casero.cu-apk.git
+cd casero.cu-apk
 ./gradlew assembleDebug
 ```
 
-Install the debug build on a connected device:
+Install on device:
 
 ```bash
 ./gradlew installDebug
 ```
 
-Signing material (`*.jks`, `keystore.properties`) is never committed — see
-[.gitignore](.gitignore).
+> 🔐 Signing material (`*.jks`, `keystore.properties`) is never committed.
 
-## The `casero.rem.cu` certificate
+## 🔒 TLS Note
 
-The portal serves a certificate that fails standard validation
-(`net::ERR_CERT_AUTHORITY_INVALID`). The recommended approach is **certificate
-pinning to the known server certificate**, not disabling TLS validation
-globally. See [CLAUDE.md](CLAUDE.md) for the reverse-engineered request flow and
-the handling notes.
+The portal serves a certificate that fails standard validation (`net::ERR_CERT_AUTHORITY_INVALID`). The app uses **certificate pinning** — not global TLS disable. See [CLAUDE.md](CLAUDE.md) for the reverse-engineered request flow.
 
-## Contributing
+## 🤝 Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) and the
-[Code of Conduct](CODE_OF_CONDUCT.md). This repository uses
-[Conventional Commits](https://www.conventionalcommits.org/).
+See [CONTRIBUTING.md](CONTRIBUTING.md) and [Code of Conduct](CODE_OF_CONDUCT.md). Uses [Conventional Commits](https://www.conventionalcommits.org/).
 
-## Related repositories
+### 🐛 Reporting Bugs
 
-- `casero-cu-apk` — Android client (this repository)
-- `casero-cu-ios` — iOS client
+Found a bug? Open an issue in the repo where you found it:
+- **Android-specific bugs** → [file here](https://github.com/albertolicea00/casero.cu-apk/issues)
+- **iOS-specific bugs** → [file here](https://github.com/albertolicea00/casero.cu-ios/issues)
+- **Core / cross-platform issues** (API changes, auth flow, etc.) → file in either repo, we'll track it across both
 
-## License
+## 📦 Related
+
+- [casero.cu-ios](https://github.com/albertolicea00/casero.cu-ios) — iOS client
+- [casero.cu-apk](https://github.com/albertolicea00/casero.cu-apk) — Android client (this repo)
+
+## 📄 License
 
 [MIT](LICENSE) © 2026 Alberto Licea
