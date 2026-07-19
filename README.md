@@ -5,6 +5,7 @@
 [![Language: Kotlin](https://img.shields.io/badge/Language-Kotlin-7F52FF?logo=kotlin)](https://kotlinlang.org)
 [![Build: Gradle KTS](https://img.shields.io/badge/Build-Gradle_KTS-02303A?logo=gradle)](https://gradle.org)
 [![PRs: Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)](CONTRIBUTING.md)
+[![USSD sync](https://github.com/albertolicea00/casero.cu-apk/actions/workflows/ussd-sync-check.yml/badge.svg)](https://github.com/albertolicea00/casero.cu-apk/actions/workflows/ussd-sync-check.yml)
 
 [Mira la versión en español](README.es.md)
 
