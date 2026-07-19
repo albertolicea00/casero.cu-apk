@@ -52,6 +52,12 @@ Install on device:
 
 The portal serves a certificate that fails standard validation (`net::ERR_CERT_AUTHORITY_INVALID`). The app uses **certificate pinning** — not global TLS disable. See [CLAUDE.md](CLAUDE.md) for the reverse-engineered request flow.
 
+## 🔄 Reporting code source of truth
+
+USSD/SMS codes across my apps are centralized in **[MyUSSDCodes-collection](https://github.com/albertolicea00/MyUSSDCodes-collection)** (the single source of truth). CASERO's guest-report code is **not finalized yet** — `UssdSmsReporter` still ships `*TODO*{passport}#` placeholders.
+
+A weekly GitHub Action ([`ussd-sync-check`](.github/workflows/ussd-sync-check.yml)) watches the canonical [`casero-report`](https://github.com/albertolicea00/MyUSSDCodes-collection/blob/main/codes/casero-report.json) collection. It is **expected to stay red** until the real reporting code is published there (its `placeholder` tag removed) — that red is the reminder. Once it lands, wire the real dial string into `UssdSmsReporter` and close the tracking issue.
+
 ## 🤝 Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md), [SECURITY.md](SECURITY.md), and [Code of Conduct](CODE_OF_CONDUCT.md). Uses [Conventional Commits](https://www.conventionalcommits.org/).
