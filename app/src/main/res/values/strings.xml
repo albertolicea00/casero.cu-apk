@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Casero</string>
+
+    <!-- Login -->
+    <string name="login_title">Sign in</string>
+    <string name="login_user_hint">Username</string>
+    <string name="login_password_hint">Password</string>
+    <string name="login_submit">Sign in</string>
+
+    <!-- Guests -->
+    <string name="guests_title">Registered guests</string>
+    <string name="guests_empty">No guests in this range.</string>
+    <string name="guests_retry">Retry</string>
+    <string name="action_sign_out">Sign out</string>
+
+    <!-- Errors -->
+    <string name="error_session_expired">Session expired. Please sign in again.</string>
+    <string name="error_network">Could not reach the portal. The portal is only reachable from inside Cuba.</string>
+</resources>

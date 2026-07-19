@@ -1,0 +1,4 @@
+<resources>
+    <!-- Compose owns the in-app theming; this is only the launch/base theme. -->
+    <style name="Theme.CaseroCU" parent="android:Theme.Material.Light.NoActionBar" />
+</resources>
