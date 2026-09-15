@@ -1,4 +1,5 @@
 # 🏠 CASERO.cu — Android
+Native Android client for Cuban lodging hosts to submit guest reports to the official portal. 🇨🇺
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Platform: Android](https://img.shields.io/badge/Platform-Android-3DDC84?logo=android)](https://developer.android.com)
@@ -8,11 +9,10 @@
 
 [Mira la versión en español](README.es.md)
 
-Native Android client for Cuban lodging hosts to submit guest reports to the official portal. 🇨🇺
+## ⚠️ Disclaimer
 
-> ⚠️ **Unofficial project.** Not affiliated with CIDP-MININT or any government entity. Talks to the official portal using the host's own credentials, the same way a browser does.
->
-> 🛡️ **Disclaimer:** We are not responsible for changes to `casero.rem.cu`, USSD/SMS codes, or any issues arising from using this software. Use at your own risk. Always verify guest registrations through official channels.
+> [!WARNING]
+> **Unofficial project.** Not affiliated with CIDP-MININT or any government entity. Talks to the official portal using the host's own credentials, the same way a browser does. We are not responsible for changes to `casero.rem.cu`, USSD/SMS codes, or any issues arising from using this software. Use at your own risk. Always verify guest registrations through official channels.
 
 ---
 
