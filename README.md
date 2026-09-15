@@ -32,6 +32,14 @@ Native Android client for Cuban lodging hosts to submit guest reports to the off
 | Build | Gradle (Kotlin DSL) |
 | Networking | ASP.NET MVC portal (anti-forgery token + session cookies) |
 
+## 🏗 Why Separate Native Apps? (iOS vs Android)
+
+Rather than using a single cross-platform framework (e.g., Flutter or React Native), CASERO.cu maintains independent native codebases:
+
+- **OS-level Permissions & Platform Freedoms:** Android allows deeper OS-level integrations (such as background tasks, custom telephony/USSD automation, and hardware APIs) that enable extending app functionality further over time.
+- **iOS Sandbox & Capabilities:** iOS imposes stricter sandbox limits and restrictions (less API freedom), constraining features to what Apple explicitly permits.
+- **Optimized Experience:** Developing natively for Kotlin on Android and Swift on iOS guarantees maximum performance, native UX, and proper platform-specific security (such as custom TLS pinning and background worker capabilities).
+
 ## 🚀 Getting Started
 
 ```bash
