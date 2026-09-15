@@ -1,4 +1,5 @@
 # 🏠 CASERO.cu — Android
+Cliente nativo Android para que los arrendadores de casas particulares en Cuba reporten sus huéspedes a las autoridades. 🇨🇺
 
 [![License: MIT](https://img.shields.io/badge/Licencia-MIT-yellow.svg)](LICENSE)
 [![Plataforma: Android](https://img.shields.io/badge/Plataforma-Android-3DDC84?logo=android)](https://developer.android.com)
@@ -8,11 +9,11 @@
 
 [See the English version](README.md)
 
-Cliente nativo Android para que los arrendadores de casas particulares en Cuba reporten sus huéspedes a las autoridades. 🇨🇺
+## ⚠️ Disclaimer
 
-> ⚠️ **Proyecto no oficial.** No está afiliado con CIDP-MININT ni ninguna entidad gubernamental. Se conecta al portal oficial usando las credenciales del propio arrendador, igual que lo haría un navegador.
->
-> 🛡️ **Aviso:** No nos responsabilizamos por cambios en `casero.rem.cu`, los códigos USSD/SMS, o cualquier problema derivado del uso de este software. Úselo bajo su propio riesgo. Siempre verifique los registros de huéspedes por los canales oficiales.
+> [!WARNING]
+> **Unofficial project.** Not affiliated with CIDP-MININT or any government entity. Talks to the official portal using the host's own credentials, the same way a browser does. We are not responsible for changes to `casero.rem.cu`, USSD/SMS codes, or any issues arising from using this software. Use at your own risk. Always verify guest registrations through official channels.
+
 
 ---
 
